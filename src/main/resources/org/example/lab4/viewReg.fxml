@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="50.0" prefWidth="50.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="ind" layoutX="11.0" layoutY="6.0" text="И" textAlignment="CENTER" />
+      <Label fx:id="val" layoutX="11.0" layoutY="28.0" text="З" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

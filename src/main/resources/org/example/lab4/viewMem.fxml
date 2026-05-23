@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="35.0" minHeight="35.0" prefHeight="35.0" prefWidth="35.0" style="-fx-border-color: #90caf9;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="ind" layoutX="8.0" text="И" textAlignment="CENTER">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <Label fx:id="val" layoutX="9.0" layoutY="13.0" text="З" textAlignment="CENTER">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

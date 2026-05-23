@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab4.progController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0">
+         <top>
+            <Pane prefHeight="86.0" prefWidth="616.0" style="-fx-background-color: #90caf9;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="but_add" layoutX="245.0" layoutY="20.0" mnemonicParsing="false" onAction="#addCommand" prefHeight="45.0" prefWidth="70.0" text="Добавить" />
+                  <Button fx:id="but_do" layoutX="409.0" layoutY="20.0" mnemonicParsing="false" onAction="#doOnce" prefHeight="45.0" prefWidth="80.0" text="Выполнить" />
+                  <Button fx:id="but_restart" layoutX="497.0" layoutY="20.0" mnemonicParsing="false" onAction="#restart" prefHeight="45.0" prefWidth="80.0" text="Перезапуск" />
+                  <TextField fx:id="text_com" layoutX="107.0" layoutY="17.0" prefHeight="25.0" prefWidth="127.0" text="ld" />
+                  <TextField fx:id="text_arg1" layoutX="107.0" layoutY="49.0" prefHeight="25.0" prefWidth="50.0" text="a" />
+                  <TextField fx:id="text_arg2" layoutX="184.0" layoutY="49.0" prefHeight="25.0" prefWidth="50.0" text="0" />
+                  <Label layoutX="20.0" layoutY="20.0" text="Команда:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="51.0" text="Аргументы:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+         </top>
+         <left>
+            <ScrollPane fx:id="all_comands" prefHeight="338.0" prefWidth="406.0" BorderPane.alignment="CENTER">
+               <content>
+                  <GridPane fx:id="all_commands" prefHeight="314.0" prefWidth="404.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="400.0" minWidth="400.0" prefWidth="400.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="50.0" minHeight="6.399995231628424" prefHeight="34.39999618530274" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                      <children>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+                      </children>
+                  </GridPane>
+               </content></ScrollPane>
+         </left>
+         <right>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <top>
+                  <Pane prefHeight="57.0" prefWidth="200.0" style="-fx-background-color: #e3f2fd;" BorderPane.alignment="CENTER">
+                     <children>
+                        <GridPane fx:id="all_reg" layoutY="5.0" prefHeight="55.0" prefWidth="198.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                        </GridPane>
+                     </children></Pane>
+               </top>
+               <bottom>
+                  <Pane prefHeight="107.0" prefWidth="200.0" style="-fx-background-color: #e3f2fd;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label layoutX="6.0" layoutY="7.0" text="Ячейки памяти:" textAlignment="CENTER">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="6.0" layoutY="22.0" prefHeight="19.0" prefWidth="170.0" text="Самая популярная программа:">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="4.0" layoutY="46.0" text="Рейтинг команд:">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="mem_stat" layoutX="149.0" layoutY="7.0" text=" ">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="mpp_stat" layoutX="150.0" layoutY="24.0" text=" ">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="reit_stat" layoutX="86.0" layoutY="45.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                     </children></Pane>
+               </bottom>
+               <center>
+                  <ScrollPane prefHeight="163.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <content>
+                        <GridPane fx:id="all_mem" prefHeight="133.0" prefWidth="200.0">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                        </GridPane>
+                     </content>
+                  </ScrollPane>
+               </center>
+            </BorderPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>
